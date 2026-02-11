@@ -12,6 +12,8 @@
 
 import datetime
 
+cinAdd = TimeDuration.timeAdd(0,0,0,0)
+
 class TimeDuration:
     def __init__(self,days,hours,minutes,seconds):
         self.days = days
@@ -21,7 +23,7 @@ class TimeDuration:
 
     def timeAdd(self,days,hours,minutes,seconds):
         TimeDuration.__init__(days,hours,minutes,seconds)
-        return datetime.timedelta(days,hours,minutes,seconds).timestamp()
+        return datetime.timedelta.(cinAdd)
 
 a = TimeDuration(1,0,0,0)
 b = TimeDuration(1,0,0,0)
