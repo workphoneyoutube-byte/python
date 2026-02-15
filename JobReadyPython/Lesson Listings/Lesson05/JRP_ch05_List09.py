@@ -1,0 +1,9 @@
+age = 21
+
+if age >= 16:
+    #True if the value of the age is greater or equal to 16
+    print("This person is allowed to drive.")
+
+else:
+    #False if the value of the age is less than 16
+    print("This person is NOT allowed to drive.")

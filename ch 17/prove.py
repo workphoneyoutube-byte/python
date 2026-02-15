@@ -1,30 +1,26 @@
 import datetime
 
-cinDay = input("Enter Day: ")
-cinHour = input("Enter Hour: ")
-cinMinutes = input("Enter Minutes: ")
-#cinSeconds = input("Enter Seconds: ")
+cinDNY = input("First Year: ")
+cinDNM = input("First Month: ")
+cinDND = input("First Day: ")
+cinDNH = input("First Hour: ")
+cinDNMin = input("First Minutes: ")
+cinDNS = input("First Second: ")
 
-#timeA = datetime.datetime(int(cinDay),int(cinHour),int(cinMinutes),int(cinSeconds))
+d_now = datetime.datetime(int(cinDNY),int(cinDNM),int(cinDND),int(cinDNH),int(cinDNMin), int(cinDNS))
 
-timeA = datetime.datetime(2026,12,int(cinDay),int(cinHour),int(cinMinutes))
+cinDOY = input("Second Year: ")
+cinDOM = input("Second Month: ")
+cinDOD = input("Second Day: ")
+cinDOH = input("Second Hour: ")
+cinDOMin = input("Second Minutes: ")
+cinDOS = input("Second Seconds: ")
 
-cinDayB = input("Enter Day: ")
-cinHourB = input("Enter Hour: ")
-cinMinutesB = input("Enter Minutes: ")
-#cinSecondsB = input("Enter Seconds: ")
+d_other = datetime.datetime(int(cinDOY),int(cinDOM),int(cinDOD),int(cinDOH),int(cinDOMin),int(cinDOS))
 
-#timeB = datetime.datetime(int(cinDayB),int(cinHourB),int(cinMinutesB),int(cinSecondsB))
+print(d_now)
+print(d_other)
 
-# add one hour to the current datetime
-# d3 = timeA + datetime.timedelta()
-
-#timeC = timeA + datetime.timedelta(days = int(cinDayB), hours = int(cinHour), minutes = int(cinMinutes), seconds = int(cinSeconds))
-
-timeC = timeA + datetime.timedelta(days = int(cinDayB), hours = int(cinHourB), minutes = int(cinMinutes))
-timeD = timeA - datetime.timedelta(days = int(cinDayB), hours = int(cinHourB), minutes = int(cinMinutes))
-
-print("Addition: ")
-print(timeC.day,timeC.hour,timeC.minute,timeC.second)
-print("Subtraction: ")
-print(timeD.day,timeD.hour,timeD.minute,timeD.second)
+days_passed = d_now - d_other
+print(days_passed)
+print(days_passed.days)

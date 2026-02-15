@@ -1,42 +1,25 @@
-# Build Time Duration Calculator
-# It will Add or Subtract two different lengths of time
-# Must include: days, hours, minutes and seconds
-# User prompt - Must allow specification of addition or subtraction
-# User specification must be between two different input times
-# Multiple Outputs Include the Following: 
-# Number of days, hours, minutes and seconds
-# Number of days
-# Number of hours
-# Number of minutes
-# Number of seconds
-
 import datetime
 
-cinDays = 0
-cinHours = 0
-cinMin = 0
-cinSec = 0
+cinDay = input("Enter Day: ")
+cinHour = input("Enter Hour: ")
+cinMinutes = input("Enter Minutes: ")
 
-class timeDuration:
-    def timeA(self,cinDays,cinHours,cinMin,cinSec):
-        self.daysa = cinDays
-        self.hoursa = cinHours
-        self.mina = cinMin
-        self.seca = cinSec
+timeA = datetime.datetime(2026,12,int(cinDay),int(cinHour),int(cinMinutes))
 
-        return datetime.timedelta(days = self.daysa, hours = self.hoursa, minutes = self.mina, seconds 
-        = self.seca)
+cinDayB = input("Enter Day: ")
+cinHourB = input("Enter Hour: ")
+cinMinutesB = input("Enter Minutes: ")
+cinSecondsB = input("Enter Seconds: ")
 
-    def timeB(self,cinDays,cinHours,cinMin,cinSec):
-        self.daysb = cinDays
-        self.hoursb = cinHours
-        self.minb = cinMin
-        self.secb = cinSec
-        
-        return datetime.timedelta(days = self.daysb, hours = self.hoursb, minutes = self.minb, seconds = self.secb)
+timeC = timeA + datetime.timedelta(days = int(cinDayB), hours = int(cinHourB), minutes = int(cinMinutesB), seconds = int(cinSecondsB))
 
-a = timeDuration()
-b = timeDuration()
+print(timeA)
+print(timeC)
 
-# example values — replace or wire up inputs as needed
-c = a.timeA(1, 1, 1, 1) + b.timeB(1, 1, 1, 1)
+timeD = timeA - datetime.timedelta(days = int(cinDayB), hours = int(cinHourB), minutes = int(cinMinutesB), seconds = int(cinSecondsB))
+print(timeD)
+
+print("Addition: ")
+print(timeC.day,"Day",timeC.hour,"Hours",timeC.minute,"Minutes",timeC.second,"Seconds")
+print("Subtraction: ")
+print(timeD.day,"Day",timeD.hour,"Hours",timeD.minute,"Minutes",timeD.second,"Seconds")
