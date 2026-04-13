@@ -1,0 +1,1 @@
+print("Far across the Universe, beyond the last moon of Euripedes and the balls of Leopoloas, the Long Range Mining Tug 'Longevity Six Nine Three' cruised along leisurely through the asteroid field when a loud THUNK!, awoke the First Mate.")

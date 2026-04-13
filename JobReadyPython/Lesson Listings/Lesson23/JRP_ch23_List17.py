@@ -1,0 +1,5 @@
+dataset_word_count = compute_word_count_dataset(dataset_tokenized)
+print("Word count for first review:")
+print(dataset_word_count[0]['word_count'])
+print("Word count for second review:")
+print(dataset_word_count[1]['word_count'])

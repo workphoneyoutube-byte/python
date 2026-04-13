@@ -4,6 +4,7 @@ __pycache__/
 *.pyd
 
 .venv/
+.env
 venv/
 env/
 
@@ -12,4 +13,12 @@ env/
 .ruff_cache/
 
 .ipynb_checkpoints/
+
+.vscode/
+*.swp
+.DS_Store
+
+build/
+dist/
+*.egg-info/
 ch19/.git.nested.backup/
